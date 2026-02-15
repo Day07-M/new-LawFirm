@@ -104,7 +104,7 @@ a{
   font-size: var(--fs-h1);
   padding: 1.25rem;
   gap: 25px;
-  background-image: url("../images/Home\ -\ Hero.jpg");
+  background-image: url("../images/Home - Hero.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -158,8 +158,19 @@ a{
   width: 100%;
   max-width: 30rem;
   height: 38rem;
-}
+  object-fit: cover;
+  padding: 10px;
 
+  /* Design Frame */
+  border: calc(2*10px) solid #0000;
+
+  /* Outer Line */
+  outline: 1px solid #FFC735;
+  outline-offset: calc(-1*10px);
+
+  /* Inner Line */
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#FFC735 0);
+}
 
 .layanan{
   padding: 1.25rem;
@@ -294,9 +305,10 @@ a{
 }
 
 .akreditasi img{
-  max-width: 45rem;
-  width: 100%;
-  height: 25rem;
+  /* max-width: 45rem; */
+  /* width: 100%; */
+  object-fit: cover;
+  height: 10rem;
   background-color: #cacaca23;
 }
 
