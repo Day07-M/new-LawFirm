@@ -5,7 +5,7 @@
 
 .site-footer {
   justify-items: center;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e94;
   color: #cfcfcf;
   align-content: space-around;
 }
@@ -24,6 +24,11 @@
 
 .footer-logo {
   margin-bottom: 2.5rem;
+}
+
+.footer-logo img {
+  width: 20rem;
+  height: auto;
 }
 
 .footer-content {
@@ -55,7 +60,7 @@
 
 .footer-bottom {
   justify-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.678);
   text-align: center;
   padding: 1rem 1.5rem;
   margin-top: 3rem;
