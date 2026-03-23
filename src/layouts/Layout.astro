@@ -1,0 +1,88 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  container: string;
+}
+
+const { title, description, container } = Astro.props;
+
+// Components
+import Header from '@/components/Partials/Header.astro';
+import Footer from '@/components/Partials/Footer.astro';
+
+// Styles
+import '@/styles/index.scss';
+
+import jm_favicon from '@/assets/icons/favicon.ico';
+
+const siteName = "JMLawConsult";
+const siteUrl = "https://jmlawconsult.net";
+const image = "@/assets/logo-putih.jpg";
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content={siteName} />
+
+    <!--To tell google this is the main/og web -->
+    <link rel="canonical" href={siteUrl} />
+
+    <link rel="icon" type="image/x-icon" href={jm_favicon}>
+    <link rel="apple-touch-icon" href={jm_favicon} />
+
+    <!-- Open Graph (social preview) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} /> -->
+
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+    <script>import "@/scripts/index.ts"</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "JM Law Consult",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cikupa Citra Raya No. 7",
+          "addressLocality": "Tangerang",
+          "postalCode": "15710",
+          "addressCountry": "ID"
+        },
+        "email": "abcd@gmail.com",
+        "telephone": "+628111477229"
+      }
+    </script> 
+  </body>
+</html>
