@@ -1,0 +1,72 @@
+---
+import joice_portrait from '@/assets/images/f0cc5ab6-a0ff-4ea6-bacf-73607361dd43.jpg';
+import litigasi_icon from '@/assets/icons/litigasi.png';
+import pertambangan_icon from '@/assets/icons/pertambangan.png';
+import ketenagakerjaan_icon from '@/assets/icons/ketenagakerjaan.png';
+import justitia_img from '@/assets/images/Justitia.png';
+import tentang_img from '@/assets/images/pexels-sora-shimazaki-5668882.webp';
+
+import "@/styles/home.scss";
+---
+
+<section class="hero">
+  <div class="left-hero">
+    <p class="hero-subtitle">KONSULTASI HUKUM MUDAH, CEPAT, DAN TRANSPARAN</p>
+    <h1>Konsultasi Hukum Joice Massie</h1>
+    <p class="content">Bicara dengan pengacara ahli langsung dari perangkat anda.
+      Tanpa ribet, biaya terukur, dan kerahasiaan terjamin
+    </p>
+    <a data-aos="fade-up" data-aos-delay="400" href="https://wa.me/6281234567890?text=Halo%20Saya%20ingin%20mengetahui%20informasi%20lebih%20lanjut%20mengenai%20Jasa%20Hukum%20JM%20Law%20Consult.%0A-%0A-%0AHello%20i%20want%20to%20get%20further%20information%20about%20JM%20Legal%20Services.%20(I-C)." target="#">
+      HUBUNGI</a>
+  </div>
+  <img src={joice_portrait.src} alt="Joice Massie pendiri dan penyedia jasa JM Law Consult">
+</section>
+
+<section class="layanan">
+  <div class="section-title"><span>LAYANAN</span></div>
+  <h2>SOLUSI HUKUM KOMPREHENSIF UNTUK KEBUTUHAN PERSONAL DAN BISNIS ANDA</h2>
+
+  <div class="service-list">
+    <div class="service-card I" data-aos="zoom-in" data-aos-delay="100">
+      <img src={litigasi_icon.src} alt="Icon layanan litigasi">
+      <h3>LITIGASI/NON-LITIGASI</h3>
+      <p>Layanan Litigasi, Pendampingan dan perwakilan hukum dalam penyelesaian sengketa melalui proses pengadilan, termasuk penyusunan dokumen hukum, strategi perkara, dan pembelaan kepentingan klien di hadapan hakim.
+        <br/>
+        Layanan Non-Litigasi,
+          Pendampingan hukum dalam penyelesaian sengketa di luar pengadilan melalui negosiasi, mediasi, atau arbitrase, dengan fokus pada solusi yang efisien, efektif, dan menguntungkan bagi klien.</p>
+    </div>
+
+    <div class="service-card II" data-aos="zoom-in" data-aos-delay="200">
+      <img src={pertambangan_icon.src} alt="Icon layanan pertambangan">
+      <h3>PERTAMBANGAN</h3>
+      <p>Navigasi hukum di industri pertambangan sangatlah kompleks.
+        Kami membantu perusahaan tambang mulai dari tahap eksplorasi hingga pascatambang agar tetap patuh pada regulasi nasional yang dinamis
+      </p>
+    </div>
+
+    <div class="service-card III" data-aos="zoom-in" data-aos-delay="300">
+      <img src={ketenagakerjaan_icon.src} alt="Icon layanan ketenagakerjaan">
+      <h3>KETENAGAKERJAAN</h3>
+      <p>Kelola hubungan industrial yang harmonis.
+        mulai dari penyusunan peraturan perusahaan (PP), Perjanjian Kerja Bersama(PKB), hingga penyelesaian perselisihan di Pengadilan Hubungan Industrial(PHI).
+      </p>
+    </div>
+  </div>
+  <button data-aos="fade-up" data-aos-delay="400">PELAJARI SELENGKAPNYA</button>
+</section>
+
+<section class="akreditasi">
+  <p class="section-title"><span>AKREDITASI</span></p>
+  <h2>KEALIHAN HUKUM YANG TERAKREDITASI</h2>
+  <img src={justitia_img.src} alt="Sertifikat Pertambangan Justicia ">
+</section>
+
+<section class="tentang-kami">
+  <p class="section-title"><span>TENTANG KAMI</span></p>
+  <h2>MENJEMBATANI BISNIS ANDA DENGAN KEPASTIAN HUKUM</h2>
+  <p> JM Law Consult menyediakan layanan konsultasi hukum yang dibangun di atas fondasi lebih dari 20 tahun pengalaman nyata di dunia korporasi, khususnya dalam industri manufaktur.
+    Kami memahami bahwa dalam bisnis, Anda tidak hanya butuh teori hukum, tapi solusi yang bisa langsung diterapkan.
+  </p>
+  <img src={tentang_img.src} alt="Mengenai JM Law Consult">
+  <p>"Integritas dalam setiap langkah, ketegasan dalam setiap pembelaan"</p>
+</section>

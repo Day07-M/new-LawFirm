@@ -1,0 +1,25 @@
+---
+import jm_logo from '@/assets/icons/JM Logo.svg';
+
+import '@/styles/header.scss';
+---
+
+<div class="cover-container">
+  <header class="navbar">
+    <div class="logo"><img src={jm_logo.src} alt="JM Law Consult Logo"></div>
+    
+    <div class="nav-container">
+      <button class="burger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/" data-page="home">Beranda</a></li>
+        <li><a href="/contact" data-page="contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>

@@ -24,6 +24,11 @@
 
 .footer-logo {
   margin-bottom: 2.5rem;
+
+  img {
+    width: 20rem;
+    height: auto;
+  }
 }
 
 .footer-logo img {
@@ -60,7 +65,7 @@
 
 .footer-bottom {
   justify-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.678);
+  border-top: 1px solid rgba(255, 255, 255, 0.65);
   text-align: center;
   padding: 1rem 1.5rem;
   margin-top: 3rem;

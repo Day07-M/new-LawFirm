@@ -86,20 +86,16 @@ header.is-sidebar .logo {
 }
 
 .logo {
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-shadow: 2px 2px 3px #e4b35d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #e4b35d;
 	justify-self: center;
 
-	/* align-items: center; */
-}
-
-.logo img {
-	width: 100%;
-	max-width: 20rem;
-	height: auto;
-
-	/* margin-right: 0.5rem; */
+  img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
 }
 
 .nav-links {

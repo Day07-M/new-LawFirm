@@ -1,0 +1,308 @@
+.content{
+  color: #C6C6C6;
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: var(--fs-h1);
+  padding: 1.25rem;
+  gap: 25px;
+  background-image: url("@/assets/images/Home - Hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-subtitle{
+  font-size: var(--fs-h2);
+  color: #FFC735;
+}
+
+.left-hero{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* align-content: left; */
+}
+
+.hero h1{
+  font-size: 42px;
+  color: #FFFFFF;
+  /* text-align: center; */
+}
+
+.hero p{
+  font-size: 14px;
+}
+
+.hero a{
+  color:#FFFFFF;
+  padding: 1.25rem;
+  margin: 1.25rem 0 1.25rem 0 ;
+  background-color: transparent;
+  border-color: white;
+  width: 100%;
+  max-width: 15rem;
+  border: 2px solid #ffffff62;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: ease-in-out 1s;
+}
+
+.hero a:hover {
+  /* box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px); */
+  border: 2px solid #ffffff;
+  transition:ease-in-out 2ms;
+}
+
+.hero img{
+  width: 100%;
+  max-width: 30rem;
+  height: 38rem;
+  object-fit: cover;
+  padding: 10px;
+
+  /* Design Frame */
+  border: calc(2*10px) solid #0000;
+
+  /* Outer Line */
+  outline: 1px solid #FFC735;
+  outline-offset: calc(-1*10px);
+
+  /* Inner Line */
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#FFC735 0);
+}
+
+.layanan{
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: var(--fs-h2);
+  justify-content: center;
+  align-items: center;
+}
+
+.layanan button{
+  color:black;
+  padding: 1.25rem;
+  margin: 1.25rem 0 1.25rem 0 ;
+  background-color: transparent;
+  border-color: black;
+  width: 100%;
+  max-width: 100vh;
+}
+
+.service-list{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  position: relative;
+  font-size: var(--fs-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* background: black; */
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  width: 260px;
+  min-height: 260px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card.I{
+  background: linear-gradient(
+  to bottom,
+  rgba(0,0,0,0.65),
+  rgba(0,0,0,0.35)
+  ), url(@/assets/images/Litigasi.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.service-card.II{
+  background-image:linear-gradient(
+  to bottom,
+  rgba(0,0,0,0.65),
+  rgba(0,0,0,0.35)
+  ), url(@/assets/images/Pertambangan.jpg);
+}
+.service-card.III{
+  background-image:linear-gradient(
+  to bottom,
+  rgba(0,0,0,0.65),
+  rgba(0,0,0,0.35)
+  ), url(@/assets/images/Ketenagakerjaan.jpg);
+}
+
+.service-card:hover,
+.service-card:active {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.service-card img,
+.service-card h3 {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: var(--fs-h3);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.service-card p {
+  position: absolute;
+  inset: 0;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.88);
+  color: #C8C8C8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.service-card:hover p,
+.service-card:active p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover img,
+.service-card:hover h3,
+.service-card:active img,
+.service-card:active h3 {
+  opacity: 0;
+}
+
+.layanan h2{
+  font-size: 24px;
+}
+
+.akreditasi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.akreditasi img{
+  /* max-width: 45rem; */
+  /* width: 100%; */
+  object-fit: cover;
+  height: 10rem;
+  background-color: #cacaca23;
+}
+
+.tentang-kami{
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #EAEAEA;
+}
+
+.tentang-kami img{
+  max-width: 20rem;
+  width: 100%;
+  height: 25rem;
+}
+
+.tentang-kami span{
+  background-color: #EAEAEA;
+}
+
+@media (max-width: 768px) {
+
+  .hero{
+    flex-direction: column;
+  }
+
+  .left-hero{
+  align-items: center;
+  text-align: center;
+}
+
+  .hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero img {
+    height: auto;
+    max-width: 18rem;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    width: 10em;
+}
+
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 320px;
+  }
+
+  .tentang-kami img {
+    height: auto;
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero button {
+    padding: 1rem;
+    margin: 0.75rem 0;
+  }
+
+  .layanan h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+}
