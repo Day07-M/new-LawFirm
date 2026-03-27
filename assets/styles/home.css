@@ -165,6 +165,9 @@ main{
   max-width: 30rem;
   height: auto;
   object-fit: contain;
+
+  border: 2rem;
+  border-image: url("/assets/images/frame.png") 30 round;
 }
 
 
