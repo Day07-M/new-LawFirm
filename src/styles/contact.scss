@@ -78,6 +78,9 @@
 }
 
 .profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   flex: 2 1 500px;
 }
 
